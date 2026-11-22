@@ -13,7 +13,7 @@ function HomePage() {
 
   return (
     <main>
-      <h1>Recetario</h1>
+      <h1>Recetario de Comidas Wilmar</h1>
 
       <SearchForm
         search={search}
