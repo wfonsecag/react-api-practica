@@ -1,16 +1,99 @@
-# React + Vite
+# React API Práctica
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Aplicación web desarrollada con React y Vite para buscar recetas y consultar sus detalles mediante una API pública.
 
-Currently, two official plugins are available:
+## Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Buscar recetas por nombre.
+- Mostrar estados de carga, errores y resultados vacíos.
+- Consultar recetas desde TheMealDB.
+- Navegar entre el listado y la página de detalle.
+- Mostrar instrucciones e imagen de cada receta.
+- Diseño adaptable a diferentes tamaños de pantalla.
 
-## React Compiler
+## Tecnologías
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- Vite
+- JavaScript
+- React Router
+- CSS
+- Fetch API
+- TheMealDB
+- Git y GitHub
 
-## Expanding the Oxlint configuration
+## Conceptos aplicados
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+- Componentes funcionales.
+- Props.
+- Hooks `useState` y `useEffect`.
+- Hooks personalizados.
+- Solicitudes HTTP asincrónicas.
+- Manejo de estados y errores.
+- Navegación con React Router.
+- Composición y separación de componentes.
+
+## Instalación y ejecución
+
+### Requisitos
+
+- Node.js
+- npm
+
+### Pasos
+
+1. Clonar el repositorio:
+
+```powershell
+git clone https://github.com/wfonsecag/react-api-practica.git
+```
+
+2. Entrar al proyecto:
+
+```powershell
+cd react-api-practica
+```
+
+3. Instalar dependencias:
+
+```powershell
+npm install
+```
+
+4. Iniciar el servidor de desarrollo:
+
+```powershell
+npm run dev
+```
+
+5. Abrir la dirección mostrada por Vite en el navegador.
+
+## Compilar para producción
+
+```powershell
+npm run build
+```
+
+La carpeta `dist` contendrá los archivos optimizados listos para desplegar.
+
+## API utilizada
+
+TheMealDB: https://www.themealdb.com/
+
+Endpoints utilizados:
+
+- Buscar recetas: `https://www.themealdb.com/api/json/v1/1/search.php?s=chicken`
+- Consultar detalle: `https://www.themealdb.com/api/json/v1/1/lookup.php?i=ID`
+
+## Rutas
+
+- `/`: listado y búsqueda de recetas.
+- `/recipe/:id`: detalle de una receta seleccionada.
+
+## Repositorio
+
+https://github.com/wfonsecag/react-api-practica
+
+## Autor
+
+Wilmar Fonseca
